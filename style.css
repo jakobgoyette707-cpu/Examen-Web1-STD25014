@@ -391,6 +391,9 @@ input#navphone{
    #buttons{
     flex-direction: column;
    }
+   .mechanism{
+    display: none;
+   }
 }
 .button{
     width: 180px;
@@ -466,13 +469,14 @@ svg.decorative-svg{
 }
 h3{
     font-family: var(--secondary-font);
+    font-size: 1.5rem;
 }
 h2{
     font-family: var(--secondary-font);
     color:white;
     -webkit-text-stroke: 1px var(--primary-color);
     width:fit-content;
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-bottom: 10px;
     text-shadow: 1px 1px 5px var(--accent-color);
 }
