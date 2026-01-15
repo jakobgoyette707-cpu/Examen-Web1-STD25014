@@ -19,7 +19,7 @@
                 <div class="logo"><img src="assets/logomod.png" alt=""></div>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="Service.html">Services</a></li>
+                <li><a href="service.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li id="devis" class="hud-btn"><a href="">Request a quote</a><span class="line top-left"></span><span class="line upper"></span><span class="line downer"></span><span class="line bottom-right"></span></li>
             </ul>
@@ -34,7 +34,7 @@
             </label>
             <ul class="phoneul">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Service.html">Services</a></li>
+                <li><a href="service.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -42,18 +42,18 @@
         <div id="headcontent">
             <div>
                 <h1>Your IT Services and Consulting Experts</h1>
-            <div>
+            <div id="hr3">
                 <div class="hr" id="redhr"></div>
                 <div class="hr" id="bluehr"></div>
                 <div class="hr" id="whitehr"></div>
             </div>
         </div>
         <p> Optimize your business with tailor-made IT solutions
-                since 2012
+                Loyal we are, confident you will
             </p>
             <div id="buttons">
-                <div class="button" id="bluebutton" >Get a quote</div>
-                <div class="button" id="whitebutton">Contact us</div>
+                <div  class="hud-btn"><a href="">Get a quote</a><span class="line top-left"></span><span class="line upper"></span><span class="line downer"></span><span class="line bottom-right"></span></div>
+                <div class="hud-btn" id="contactHud"><a href="">Contact us</a><span class="line top-left"></span><span class="line upper"></span><span class="line downer"></span><span class="line bottom-right"></span></div>
             </div>
         </div>
       <svg viewBox="0 0 1440 240"
@@ -88,7 +88,7 @@
 
 </div>
 </header>
-<a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+<a href="#top" id="arrowup"><img src="assets/arrowup (2).png"  alt=""></a>
 <main>
     <section id="servicesect">
         <div id="serhead">
@@ -99,10 +99,82 @@
                 <img src="assets/blit_gear_60px.png" class="gear gear-small tleft" alt="Roue petite">
                 <img src="assets/blit_gear_60px.png" class="gear gear-extrasmall tleft" alt="Roue grande">
             </div>
-        <a href="service.html"><i class="fa-solid fa-arrow-right"></i></a>
-        
         </div>
-            <div id="services">
+        <div id="sliding" class="pc">
+            <input type="radio" name="slider" id="v1" checked>
+            <input type="radio" name="slider" id="v2">
+            <input type="radio" name="slider" id="v3">
+            <input type="radio" name="slider" id="v4">
+            <input type="radio" name="slider" id="v5">
+            <input type="radio" name="slider" id="v6">
+
+            <div class="slider-container">
+                <img src="assets/bord.png" class="bord" alt="">
+            <div class="garage">
+                <div class="vehicle v1">
+                <div class="service">
+                    <img class="serverimg" src="assets/network.png" alt="Networking Solutions">
+                    <h3>Networking Solutions</h3>
+                    <p>We design, deploy, and secure reliable network infrastructures to ensure seamless, fast, and secure connectivity for your business.</p>
+                    <img src="assets/logoblitpng.png" class="signing" alt="">
+                </div>
+                <label for="v6" class="arrow left">◀</label>
+                <label for="v2" class="arrow right">▶</label>
+                </div>
+                <div class="vehicle v2">
+                <div class="service">
+                    <img class="serverimg" src="assets/serverinfra.png" alt="Servers, Storage &amp; IT Infrastructure">
+                    <h3>Servers, Storage &amp; IT Infrastructure</h3>
+                    <p>We deliver scalable server and storage solutions that guarantee performance, data protection, and business continuity.</p>
+                    <img src="assets/logoblitpng.png" class="signing" alt="">
+                </div>
+                <label for="v1" class="arrow left">◀</label>
+                <label for="v3" class="arrow right">▶</label>
+                </div>
+                <div class="vehicle v3">
+                <div class="service">
+                                <img class="serverimg" src="assets/ITsupport.png" alt="IT Technical Support Services">
+                                <h3>IT Technical Support Services</h3>
+                                <p>We provide proactive 24/7 IT support and maintenance, keeping your systems secure, stable, and always up to date.</p>
+                                <img src="assets/logoblitpng.png" class="signing" alt="">
+                            </div>
+                <label for="v2" class="arrow left">◀</label>
+                <label for="v4" class="arrow right">▶</label>
+                </div>
+                <div class="vehicle v4">
+                <div class="service">
+                                <img class="serverimg" src="assets/telecom.png" alt="Telecom VAS Applications">
+                                <h3>Telecom VAS Applications</h3>
+                                <p>We develop customized telecom value-added applications that enhance customer engagement and create new revenue opportunities.</p>
+                                <img src="assets/logoblitpng.png" class="signing" alt="">
+                            </div>
+                <label for="v3" class="arrow left">◀</label>
+                <label for="v5" class="arrow right">▶</label>
+                </div>
+                <div class="vehicle v5">
+                <div class="service">
+                                <img class="serverimg" src="assets/voicesolution.png" alt="Voice Solutions (PABX / IPBX)">
+                                <h3>Voice Solutions (PABX / IPBX)</h3>
+                                <p>We implement modern IP telephony systems that improve communication efficiency, flexibility, and cost control.</p>
+                                <img src="assets/logoblitpng.png" class="signing" alt="">
+                            </div>
+                <label for="v4" class="arrow left">◀</label>
+                <label for="v6" class="arrow right">▶</label>
+                </div>
+                <div class="vehicle v6">
+                <div class="service">
+                                <img class="serverimg" src="assets/multimedia.png" alt="Business &amp; Multimedia Services">
+                                <h3>Business &amp; Multimedia Services</h3>
+                                <p>We offer professional printing, multimedia, photography, and event services to strengthen your brand and business presence.</p>
+                                <img src="assets/logoblitpng.png" class="signing" alt="">
+                            </div>
+                <label for="v5" class="arrow left">◀</label>
+                <label for="v1" class="arrow right">▶</label>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div id="services" class="phone">
                 <div class="service">
                     <img class="serverimg" src="assets/network.png" alt="Networking Solutions">
                     <h3>Networking Solutions</h3>
@@ -140,13 +212,15 @@
                     <img src="assets/logoblitpng.png" class="signing" alt="">
                 </div>
             </div>
+            <div id="see" class="hud-btn"><a href="service.html">See our services</a><span class="line top-left"></span><span class="line upper"></span><span class="line downer"></span><span class="line bottom-right"></span></div>
         </section>
         <section id="choose">
             <h2>Why Choose Us ?</h2>
-            <div id="chooseus">
+            <div id="chooseus" class="pc">
                 <div class="description">
                     <img src="assets/expert.png" alt="">
                     <div class="desc">
+                        <img class="bordrad" src="assets/bordrad.png" alt="">
                         <div class="deschead">
                             <img class="badge" src="assets/since.png" alt="">
                             <h3>Expert IT team</h3>
@@ -161,6 +235,7 @@
                 </div>
                 <div class="description">
                     <div class="desc">
+                        <img class="bordrad" src="assets/bordrad.png" alt="">
                         <div class="deschead">
                             <img class="badge" src="assets/tailor.png" alt="">
                             <h3>Tailored solutions</h3>
@@ -220,13 +295,138 @@
                     </div>
                 </div>
             </div>
+            <div id="chooseusphone" class="phone">
+                <div class="slide">
+                    <div class="slider">
+                    <div class="desc">
+                        <div class="deschead">
+                            <img class="badge" src="assets/since.png" alt="">
+                            <h3>Expert IT team</h3>
+                            <svg class="svgdesc" width="45%" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0,50 C60,25 240,75 300,50" stroke="#ED090A" stroke-width="4" fill="transparent"/>
+                                <path d="M0,60 C90,5 210,95 300,60" stroke="#151780" stroke-width="4" fill="transparent"/>
+                            </svg>
+                        </div>
+                        <p>Experienced IT professionals delivering reliable solutions.</p>
+                        <img src="assets/logoblitpng.png" class="sign" alt="">
+                    </div>
+                    <div class="desc">
+                        <div class="deschead">
+                            <img class="badge" src="assets/tailor.png" alt="">
+                            <h3>Tailored solutions</h3>
+                            <svg width="50%" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" class="svgdesc">
+                                <path d="M0,50 C70,5 230,95 300,50" stroke="#ED090A" stroke-width="4" fill="transparent"/>
+                                <path d="M0,60 C80,15 220,85 300,60" stroke="#151780" stroke-width="4" fill="transparent"/>
+                            </svg>
+                        </div>
+                        <p>Custom solutions tailored to your needs.</p>
+                        <img src="assets/logoblitpng.png" class="sign" alt="">
+                    </div>
+                     <div class="desc">
+                        <div class="deschead">
+                            <img class="badge" src="assets/trusted.png" alt="">
+                            <h3>Trusted values</h3>
+                            <svg class="svgdesc" width="45%" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0,50 C50,10 250,90 300,50" stroke="#ED090A" stroke-width="4" fill="transparent"/>
+                                <path d="M0,60 C100,30 200,70 300,60" stroke="#151780" stroke-width="4" fill="transparent"/>
+                            </svg>
+                        </div>
+                        <p>We build long-term partnerships with transparency.</p>
+                        <img src="assets/logoblitpng.png" class="sign" alt="">
+                    </div>
+                    <div class="desc">
+                        <div class="deschead">
+                            <img class="badge" src="assets/-40%.png" alt="">
+                            <h3>Cost-effective</h3>
+                            <svg class="svgdesc" width="45%" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0,50 C80,30 220,70 300,50" stroke="#ED090A" stroke-width="4" fill="transparent"/>
+                                <path d="M0,60 C70,0 230,100 300,60" stroke="#151780" stroke-width="4" fill="transparent"/>
+                            </svg>
+                        </div>
+                        <p>High-performance solutions at competitive cost.</p>
+                        <img src="assets/logoblitpng.png" class="sign" alt="">
+                    </div>
+                     <div class="desc">
+                        <div class="deschead">
+                            <img class="badge" src="assets/locale.png" alt="">
+                            <h3>Local presence</h3>
+                            <svg class="svgdesc" width="45%" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0,50 C65,0 235,100 300,50" stroke="#ED090A" stroke-width="4" fill="transparent"/>
+                                <path d="M0,60 C55,20 245,80 300,60" stroke="#151780" stroke-width="4" fill="transparent"/>
+                            </svg>
+                        </div>
+                        <p>Local team—fast response and personalized support.</p>
+                        <img src="assets/logoblitpng.png" class="sign" alt="">
+                    </div>
+                    <div class="desc">
+                        <div class="deschead">
+                            <img class="badge" src="assets/since.png" alt="">
+                            <h3>Expert IT team</h3>
+                            <svg class="svgdesc" width="45%" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0,50 C60,25 240,75 300,50" stroke="#ED090A" stroke-width="4" fill="transparent"/>
+                                <path d="M0,60 C90,5 210,95 300,60" stroke="#151780" stroke-width="4" fill="transparent"/>
+                            </svg>
+                        </div>
+                        <p>Experienced IT professionals delivering reliable solutions.</p>
+                        <img src="assets/logoblitpng.png" class="sign" alt="">
+                    </div>
+                    <div class="desc">
+                        <div class="deschead">
+                            <img class="badge" src="assets/tailor.png" alt="">
+                            <h3>Tailored solutions</h3>
+                            <svg width="50%" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" class="svgdesc">
+                                <path d="M0,50 C70,5 230,95 300,50" stroke="#ED090A" stroke-width="4" fill="transparent"/>
+                                <path d="M0,60 C80,15 220,85 300,60" stroke="#151780" stroke-width="4" fill="transparent"/>
+                            </svg>
+                        </div>
+                        <p>Custom solutions tailored to your needs.</p>
+                        <img src="assets/logoblitpng.png" class="sign" alt="">
+                    </div>
+                     <div class="desc">
+                        <div class="deschead">
+                            <img class="badge" src="assets/trusted.png" alt="">
+                            <h3>Trusted values</h3>
+                            <svg class="svgdesc" width="45%" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0,50 C50,10 250,90 300,50" stroke="#ED090A" stroke-width="4" fill="transparent"/>
+                                <path d="M0,60 C100,30 200,70 300,60" stroke="#151780" stroke-width="4" fill="transparent"/>
+                            </svg>
+                        </div>
+                        <p>We build long-term partnerships with transparency.</p>
+                        <img src="assets/logoblitpng.png" class="sign" alt="">
+                    </div>
+                    <div class="desc">
+                        <div class="deschead">
+                            <img class="badge" src="assets/-40%.png" alt="">
+                            <h3>Cost-effective</h3>
+                            <svg class="svgdesc" width="45%" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0,50 C80,30 220,70 300,50" stroke="#ED090A" stroke-width="4" fill="transparent"/>
+                                <path d="M0,60 C70,0 230,100 300,60" stroke="#151780" stroke-width="4" fill="transparent"/>
+                            </svg>
+                        </div>
+                        <p>High-performance solutions at competitive cost.</p>
+                        <img src="assets/logoblitpng.png" class="sign" alt="">
+                    </div>
+                     <div class="desc">
+                        <div class="deschead">
+                            <img class="badge" src="assets/locale.png" alt="">
+                            <h3>Local presence</h3>
+                            <svg class="svgdesc" width="45%" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0,50 C65,0 235,100 300,50" stroke="#ED090A" stroke-width="4" fill="transparent"/>
+                                <path d="M0,60 C55,20 245,80 300,60" stroke="#151780" stroke-width="4" fill="transparent"/>
+                            </svg>
+                        </div>
+                        <p>Local team—fast response and personalized support.</p>
+                        <img src="assets/logoblitpng.png" class="sign" alt="">
+                    </div>
+                </div>                
+            </div>
         </section>
         
         <section id="contact">
             <div id="contactus">
                 <h2>Ready to optimize your IT infrastructure?</h2>
                 <p>Contact us today for a consultation and discover how we can help you achieve your goals.</p>
-                <div class="button" id="contactbtn"><a href="contact.html">Contact Us</a></div>
+                <div class="hud-btn"><a href="">Request a quote</a><span class="line top-left"></span><span class="line upper"></span><span class="line downer"></span><span class="line bottom-right"></span></div>
             </div>
         </section>
     </main>

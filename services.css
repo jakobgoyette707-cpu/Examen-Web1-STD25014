@@ -1,0 +1,28 @@
+
+#header-service{
+    background-image: url(assets/backsimple.png);
+}
+:root{
+    --primary-color: #151780;
+    --primary-color-accent: #080a6a;
+    --coloring-hud:#12136a;
+    --secondary-color: #FFFF;
+    --accent-color: #ED090A;
+    --primary-font: 'Inter', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+    --font-size: 1.1rem;
+    --secondary-font-size: 2rem;
+    --background-color: #f0f0f0;
+    --text-color: #333333;
+    --text-shadow: 3px 3px 4px black;
+}
+h1{
+    -webkit-text-stroke: 2px var(--primary-color-accent);
+}
+#contact{
+    background-image: url(assets/citytown.png) !important;
+}
+#contact #contactus p{
+    color: white;
+}
+
