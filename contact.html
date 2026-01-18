@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/logomod.png">
@@ -40,13 +44,13 @@
                 </div>
             </div>
             <div class="sectionbtn">
-                <button type="reset" class="hud-btn" id="contactHud">Reset<span class="line top-left"></span><span class="line upper"></span><span class="line downer"></span><span class="line bottom-right"></span></button>
+                <button type="reset" class="hud-btn" id="contactHud" form="from">Reset<span class="line top-left"></span><span class="line upper"></span><span class="line downer"></span><span class="line bottom-right"></span></button>
                 <h2>Contact Us</h2>
-                <button type="submit" class="hud-btn" id="submitbtn">Submit<span class="line top-left"></span><span class="line upper"></span><span class="line downer"></span><span class="line bottom-right"></span></button>
+                <button type="submit" class="hud-btn" id="submitbtn" form="from">Submit<span class="line top-left"></span><span class="line upper"></span><span class="line downer"></span><span class="line bottom-right"></span></button>
             </div>
             
             <p>Fill in the form below and we’ll get back to you shortly.</p>
-            <form action="">
+            <form action="" id="from">
                 <section id="form">
                     <div class="inputtext">
                             <div class="inputform">
@@ -64,14 +68,14 @@
                                 <label for="Contact">Contact</label>
                                 <input type="text" id="Contact" placeholder="Phone-number / email / whatsapp">
                             </div>
-                            <div class="inputdiv">
-                                <label for="company">Company name</label>
-                                <input type="text" id="company" placeholder="Optional">
+                           <div class="inputdiv">
+                                <label for="subject">subject</label>
+                                <input type="text" id="Contact" placeholder="Message subject">
                             </div>
                         </div>
                     </div>
                     <div id="textarea">
-                        <label for="descrcontact">Detail & requirements</label>
+                        <label for="descrcontact">How can we help You?</label>
                         <textarea name="" id="descrcontact"></textarea>
                     </div>
                 </section>
@@ -79,5 +83,22 @@
             </form>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2024 BLIT. Be Loyal IT. Antananarivo Madagascar.</p>
+        <div>
+            <a href="https://www.facebook.com/BeLoyalIT">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/BeLoyalIT">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/BeLoyalIT">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/261338204488">
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
