@@ -21,6 +21,8 @@
     overflow-y: hidden;
     position: relative;
 }
+.hud-btn .line{pointer-events: none;}
+
 body{
     cursor: url(assets/cursor.png), auto;
 }
@@ -69,11 +71,11 @@ p{
 }
 #contactHud{
      background: linear-gradient(180deg, #ffffff 0%, #f0f8ff 100%);
+     color: var(--coloring-hud);
+     font-weight: 600;
     }
-#contactHud a{
-    color: var(--coloring-hud);
-    font-weight: 600;
-}
+
+#contactHud .line{pointer-events: none;}
 .bord{
     width:420px;
     height: 300px;
@@ -97,6 +99,7 @@ p{
 }
 .line{
   position:absolute;
+  pointer-events: none;
   background:#6e95ff;
   box-shadow:0 0 6px rgba(110,234,255,0.9);
 }
@@ -143,6 +146,7 @@ p{
 .hud-btn::after{
   content:"";
   position:absolute;
+  pointer-events: none;
   width:2px;
   height:14px;
   background:#6eeaff;
@@ -151,6 +155,14 @@ p{
 .hud-btn:hover{
     transform: scale(1.1);
     cursor: url(assets/cursorhover.png) , auto;
+}
+.sectionbtn{
+    position: relative;
+    z-index: 1001;
+}
+.sectionbtn .hud-btn{
+    position: relative;
+    z-index: 1002;
 }
 .navright{
     display: flex;
@@ -163,8 +175,11 @@ p{
     top: 30%;
     width: fit-content;
     height:1px;
-    left: 10px;
+    left: 5px;
     z-index: 999;
+}
+#weare .describe{
+   padding: 20px;
 }
 .navright a{
     width:50px;
@@ -191,7 +206,7 @@ header{
     height: 94vh;
     padding-top: 10px;
     margin-bottom: 60px;
-    animation:fade-out 1.5s 1
+    animation:fade-out 1.5s 1 both
 }
 header #headcontent{
     height: 40vh;
@@ -237,13 +252,25 @@ a{
     bottom: 20px;
     z-index: 999;
 }
+
+input#naving:checked ~ .navright img{
+    display: none;
+}
+input#naving:checked ~ .navright a{
+    display: none;
+}
+input#naving:checked ~ .fa-arrow-right{
+    transform: rotateZ(90deg);
+}
+input[type = checkbox]{display: none;}
 .fa-arrow-right{
-    position: absolute;right: 10%;bottom: 40%;
+    transform: rotateZ(0);
+    background-color: var(--secondary-color);
 }
 .fa-solid{
      padding: 10px;
     text-shadow: 0 0 10px var(--primary-color-accent);
-    -webkit-text-stroke: 3px var(--accent-color);
+    -webkit-text-stroke: 3px var(--coloring-hud);
     font-size: 30px;
     color: transparent;
     border-radius: 50%;
@@ -439,7 +466,7 @@ h1{
     }
     #services .service{
         width: 30vw;
-        min-width:200px;
+        min-width:100px;
     }
     header{
         background-image: url(assets/backphone1.png);
@@ -491,9 +518,12 @@ input#navphone{
 #navphone:checked ~ #toggle{
     display: none;
 }
-.phoneul{
-    position: relative;
-    list-style: none;
+input#naving:checked ~ .fa-arrow-right {
+    transform: rotateZ(0);
+}
+.desc:hover, .imagechoose:hover{
+    transform:scale(1.05);
+    animation: none;
 }
 .ikxs{
     font-size: 2rem;
@@ -507,6 +537,21 @@ input#navphone{
    #buttons{
     flex-direction: column;
    }
+   #weare{
+    height: fit-content !important;
+    margin-bottom: 20px !important;
+   }
+   #video{
+    display: none !important;
+   }
+   .describe{
+    width: 100% !important;
+    align-items: center;
+    text-align: center;
+   }
+   .describe p{
+    width: 80%;
+   }
    .partner p{
     display: none;
    }
@@ -518,6 +563,7 @@ input#navphone{
    .whocontent p{
     display: none;
    }
+   
    .mechanism{
     display: none;
    }
@@ -660,9 +706,20 @@ h2{
 .description img, .description .desc{
     width: 45%;
 }
-.description > img{
+.imagechoose{
     animation: heal 5s alternate-reverse infinite linear;
     box-shadow: 0 0 10px var(--coloring-hud);
+    position: relative;
+    width: 45%;
+    border-radius: 10px;
+    
+}
+.imagechoose img{
+    width: 100%;
+}
+.bordimage{
+    position: absolute;
+    top: -5px;
 }
 .desc{
     padding: 20px ;
@@ -747,8 +804,8 @@ main{
 }
 .spacer{
     width: 100%;
-    height: 7vh;
-    max-height: 100px;
+    height: 10vh;
+    max-height: 200px;
 }
 .servcontent{
     position: relative;
@@ -966,7 +1023,7 @@ input[type="radio"] { display: none; }
     padding-top :30px;
     align-items: center;
     height: 70vh;
-    max-height: 800px;
+    
 }
 #video{
     height: 60vh;
@@ -1139,6 +1196,7 @@ input[type="radio"] { display: none; }
     flex-direction: column;
     filter: drop-shadow(0 0 20px rgba(0, 220, 255, 0.5));
     align-items: center;
+    margin-bottom: 50px;
     gap: 30px;
     background-color: var(--primary-color);
 }

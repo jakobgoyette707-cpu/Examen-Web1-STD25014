@@ -16,6 +16,10 @@
     --text-color: #333333;
     --text-shadow: 3px 3px 4px black;
 }
+.btncontact{
+    display: flex;
+    gap: 30px;
+}
 h1{
     -webkit-text-stroke: 2px var(--primary-color-accent);
 }
@@ -27,4 +31,47 @@ h1{
 }
 main{
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+#allServices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.eachservices{
+    background-image: url(assets/bord.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-block: 40px;
+}
+.front{
+    width: 40vw;
+
+    height: fit-content;
+    padding: 30px;
+    max-height: 550px;
+}
+.back{display: none;}
+.frontimage{
+    width: 40%;
+    
+}
+.backimage{
+    width: 20%;
+}
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--secondary-color);
+    -webkit-text-stroke: 1px var(--primary-color-accent);
+    text-shadow: 0 0 10px var(--text-color);
+}
+.front div, .back div, .front{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.front, .back{}
