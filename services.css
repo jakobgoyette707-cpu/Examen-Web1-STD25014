@@ -40,24 +40,48 @@ main{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.serviceP p{
+    color: var(--secondary-color);
+}
 .eachservices{
     background-image: url(assets/bord.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    height: fit-content;
     margin-block: 40px;
 }
+.front label{
+    position: absolute;
+    bottom: -20px;
+}
+@media (max-width:768px){
+    .serviceP p{
+        font-size: 0px;
+    }
+    .front{
+        max-height: 300px;
+    }
+    .frontimage{
+        width: 70% !important;
+    }
+}
 .front{
-    width: 40vw;
-
-    height: fit-content;
+    width: 45vw;
+    height:60vh;
+    position: relative;
     padding: 30px;
-    max-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
 }
 .back{display: none;}
 .frontimage{
     width: 40%;
     
 }
+h2{margin-top: 40px;}
 .backimage{
     width: 20%;
 }
@@ -72,6 +96,5 @@ h3{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
 }
 .front, .back{}

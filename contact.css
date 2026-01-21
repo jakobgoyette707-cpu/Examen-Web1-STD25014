@@ -7,7 +7,7 @@
     --accent-color: #ED090A;
     --primary-font: 'Inter', sans-serif;
     --secondary-font: 'Poppins', sans-serif;
-    --font-size: 1rem;
+    --font-size: 1.2rem;
     --secondary-font-size: 2rem;
     --background-color: #f0f0f0;
     --text-color: #333333;
@@ -19,6 +19,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-image: url(assets/fullpowwweer.png);
+    background-size: cover;
 }
 .headcontact{
     height:fit-content;
@@ -33,6 +34,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 90vw;
+    max-width: 1400px;
     height: 100vh;
     max-height: 800px;
     max-height: 800px;
