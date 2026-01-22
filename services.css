@@ -20,6 +20,20 @@
     display: flex;
     gap: 30px;
 }
+@media (max-width:480px){
+    .backimage{
+        width: 40%;
+        display: block;
+    }
+}
+@media (min-width:1550px) {
+    html{
+          font-size: 30px;
+      }
+}
+.back .hud-btn{
+    font-size: 1.4rem;
+}
 h1{
     -webkit-text-stroke: 2px var(--primary-color-accent);
 }
@@ -42,20 +56,62 @@ main{
 }
 .serviceP p{
     color: var(--secondary-color);
+    font-weight: 600;
 }
 .eachservices{
     background-image: url(assets/bord.png);
+    width: 45vw;
     background-size: 100% 100%;
+    position: relative;
+    max-height: 400px;
     background-repeat: no-repeat;
-    height: fit-content;
+    height: 60vh;
     margin-block: 40px;
+    transition: all 0.5s;
 }
 .front label{
     position: absolute;
     bottom: -20px;
 }
+.back label{
+    position: absolute;
+    bottom:-20px;
+}
+.back{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
 @media (max-width:768px){
-    .serviceP p{
+    input[type="checkbox"]:checked + .eachservices .back {
+    opacity: 1;
+    transform: translateY(-400px);
+    pointer-events: auto;
+}
+input[type="checkbox"]:checked + .eachservices{
+    width: 80vw;
+    height: 400px;
+}
+
+}
+@media (min-width: 768px){
+    input[type="checkbox"]:checked + .eachservices .back {
+    opacity: 1;
+    transform: translateY(-60vh);
+    pointer-events: auto;
+}
+input[type="checkbox"]:checked + .eachservices{
+    width: 80vw;
+    height: 75vh;
+}
+
+}
+@media (max-width:768px){
+    .front .serviceP p{
         font-size: 0px;
     }
     .front{
@@ -65,8 +121,20 @@ main{
         width: 70% !important;
     }
 }
+input[type="checkbox"]:checked + .eachservices .front {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.backrepresent{display: none !important;}
+
+
 .front{
     width: 45vw;
+     opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    max-height: 400px;
     height:60vh;
     position: relative;
     padding: 30px;
@@ -76,7 +144,21 @@ main{
     gap: 5%;
     align-items: center;
 }
-.back{display: none;}
+.front, .back {
+    filter: blur(0);
+}
+
+input:checked + .eachservices .front {
+    filter: blur(4px);
+}
+
+.back{
+    position: absolute;
+     pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+     transform: translateY(20px);
+    opacity: 0;
+}
 .frontimage{
     width: 40%;
     
@@ -97,4 +179,4 @@ h3{
     align-items: center;
     flex-direction: column;
 }
-.front, .back{}
+
